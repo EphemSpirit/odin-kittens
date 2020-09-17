@@ -28,6 +28,7 @@ class KittensController < ApplicationController
 
   def show
     respond_to do |format|
+      format.html
       format.json { render json: @kitten }
     end
   end
